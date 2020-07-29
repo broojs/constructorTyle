@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Конструктор плитки</title>
+	<link rel="shortcut icon" href="/assets/img/tileIcon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/html2canvas.js"></script>
+
+</head>
+
+<body>
+	<div class="pr">
+		<div class="preloader">
+			<div class="item item-1"></div>
+			<div class="item item-2"></div>
+			<div class="item item-3"></div>
+			<div class="item item-4"></div>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<header>
+			<nav>
+			<!--	<div class="logo-box">
+					<h1 class="logo">
+						<a href="/">
+			<			<img src="http://html5book.ru/wp-content/uploads/2015/01/logo-header.png">
+						</a>
+					</h1>
+				</div>-->
+				<ul>
+					<li><a class="qwe" href="../index.html">Главная</a></li>
+					<li><a class="qwe" href="#">Дополнительно</a></li>
+					<li class="qwe"><button class="buttonsContinue"><a href="/Plitka(other)/index.html">Изменить дизайн</a></button></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="cont" id="contScreen">
+			<div class="leftConfig">
+
+				<div class="iconSteps">
+					<h2 id="headSteps">Шаги:</h2>
+
+					<div class="www">
+					<a class="steps" href="#">1</a>
+					<a class="steps" href="#">2</a>
+					<a class="steps" href="#">3</a>
+					<a class="steps qwe" href="#">4</a>
+					<a class="steps" href="#">5</a>
+					<a class="steps" href="#">6</a>
+					<a class="steps" href="#">7</a>
+				</div>
+			</div>
+				<div class="type">
+					<h3><span class="step">ШАГ №1</span>Выберите тип плитки:</h3>
+
+					<div class="chooseType">
+
+						<div class="wrapType">
+							<img id="type1" src="img/Превью/prevBlock.png" alt="">
+							<h5>Камень</h5>
+						</div>
+
+						<div class="wrapType">
+
+							<img id="type2" src="img/Превью/prevFacade.png" alt="">
+							<h5>Напольная<br> плитка</h5>
+						</div>
+
+						<div class="wrapType">
+
+							<img id="type3" src="img/Превью/prevDecor.png" alt="">
+							<h5>Декор</h5>
+						</div>
+
+						<div class="wrapType">
+							<img id="type4" src="img/Превью/prevWall.jpg" alt="">
+							<h5>Настенная <br> плитка</h5>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="material">
+					<h3><span class="step">ШАГ №2</span>Выберите материал:</h3>
+
+					<div class="chooseForm">
+
+						<div class="wrapType">
+							<img id="material1" src="img/Превью/Керамогранит.jpg" alt="">
+							<h5>Керамогранит</h5>
+						</div>
+
+						<div class="wrapType">
+							<img id="material2" src="img/Превью/Клинкер.jpg" alt="">
+							<h5>Клинкер</h5>
+						</div>
+
+						<div class="wrapType">
+							<img id="material3" src="img/Превью/Керамика.jpg" alt="">
+
+							<h5>Керамическая<br> плитка</h5>
+						</div>
+
+
+					</div>
+				</div>
+
+				<div class="form">
+					<h3><span class="step">ШАГ №3</span>Выберите форму:</h3>
+
+					<div class="chooseForm">
+
+						<img class="btnForm" id="btnSquare" src="img/Превью/square.png" alt="">
+
+						<img class="btnForm" id="btnTriangle" src="img/Превью/triangle.png" alt="">
+
+						<img class="btnForm" id="btnHexagon" src="img/Превью/hexagon.png" alt="">
+
+
+					</div>
+				</div>
+
+				<div class="color">
+					<h3><span class="step">ШАГ №4</span>Выберите цвет:</h3>
+					<div class="chooseColor">
+
+						<div class="prevColor"> <span>
+								<</span> </div> <svg class="carryColor" id="btnBlackColor">
+									<rect width="50" height="50" fill="parent">
+										</svg>
+
+										<svg class="carryColor" id="btnGrayColor">
+											<rect width="50" height="50" fill="gray">
+										</svg>
+
+										<svg class="carryColor" id="btnWhiteColor">
+											<rect width="50" height="50" fill="white">
+										</svg>
+
+										<svg class="hideImgColor" id="btnGreenColor">
+											<rect width="50" height="50" fill="green">
+										</svg>
+
+										<svg class="hideImgColor" id="btnRedColor">
+											<rect width="50" height="50" fill="red">
+										</svg id>
+
+										<svg class="hideImgColor" id="btnBrownColor">
+											<rect width="50" height="50" fill="brown">
+										</svg id>
+
+										<div class="nextColor"> > </div>
+
+						</div>
+					</div>
+					<h3 class="texture" id="or">ИЛИ</h3>
+					<div class="texture">
+						<h3>Выберите текстуру:</h3>
+						<div class="chooseTexture">
+
+							<div class="prev"> <span>
+									<</span> </div> <img class="indexImg carry" id="btn1Texture"
+										src="img/Камень/Плитняк.jpg" alt="">
+
+										<img class="indexImg carry" id="btn2Texture"
+											src="img/Камень/Кирпич Рельефный.jpg" alt="">
+
+										<img class="indexImg carry" id="btn3Texture" src="img/Камень/Кедровый скол.jpg"
+											alt="">
+
+										<img class="indexImg hideImg" id="btn4Texture" src="img/Камень/Кирпич Амран.jpg"
+											alt="">
+
+										<img class="indexImg hideImg" id="btn5Texture"
+											src="img/Камень/Кирпич Гжельский.jpg" alt="">
+
+										<img class="indexImg hideImg" id="btn6Texture"
+											src="img/Камень/Кирпич Клинкер.jpg" alt="">
+
+										<div class="next"> > </div>
+							</div>
+
+						</div>
+
+						<div class="addImage">
+							<h4 class="texture">Не нравятся предложенные текстуры?Добавьте свою!</h4>
+
+							<div class="example-2">
+								<div class="form-group">
+								  <input type="file" name="AddImage" id="AddImage" class="input-file">
+								  <label for="AddImage" class="btn btn-tertiary js-labelFile">
+									<i class="icon fa fa-check"></i>
+									<span class="js-fileName">Загрузить текстуру</span>
+								  </label>
+								</div>
+							   </div>
+							<button class="buttonsContinue" id="sixStep">Далее</button>
+						</div>
+
+
+						<div class="info_total">
+							<h3><span class="step">ШАГ №5</span>Настройте ширину и высоту:</h3>
+							<div class="downConfig">
+								<label for="btnWidth">Ширина: </label> <input type="number" placeholder="мм" value="300"
+									name="btnWidth" id="btnWidth">
+								<label for="btnHeight">Высота: </label> <input type="number" placeholder="мм" value="300"
+									name="btnHeight" id="btnHeight">
+							</div>
+							<button class="buttonsContinue" id="sevenStep">Далее</button>
+
+						</div>
+
+
+						<div class="calc_square">
+							<h3><span class="step">ШАГ №6</span>Укажите площадь участка:</h3>
+
+							<label for="btnWidthSquare">Площадь:(м2) </label> <input type="number" placeholder="м2"
+								name="btnWidthSquare" id="btnWidthSquare" value="0">
+							<h4>Необходимое количество плиток для покрытия участка: <span id="calc_tile"></span></h4>
+							<button class="buttonsContinue" id="eightStep">Далее</button>
+
+
+						</div>
+
+
+
+						<div class="amount">
+							<h3><span class="step">ШАГ №7</span>Количество:</h3>
+
+							<div class="chooseAmount">
+
+								<a id="minus">-</a><input type="text" pattern="\d [0-9]" value="1" id="totalAmount"><a
+								   id="plus">+</a>
+
+							</div>
+							<button class="buttonsContinue" id="finishStep">Рассчитать</button>
+
+						</div>
+
+
+						<div class="total">
+
+							<table class="features-table">
+								<tbody>
+									<tr>
+										<td nowrap>
+											<h3>Тип:</h3>
+										</td>
+										<td class="grey"><span id="getType"></span></td>
+
+									</tr>
+
+									<tr>
+										<td nowrap>
+											<h3>Материал:</span></h3>
+										</td>
+										<td class="grey"><span id="getMaterial"></td>
+									</tr>
+									<tr>
+										<td nowrap>
+											<h3>Форма:</h3>
+										</td>
+										<td class="grey"><span id="getForm"></span></td>
+									</tr>
+
+									<tr id="checkColor">
+										<td nowrap>
+											<h3>Цвет:</h3>
+										</td>
+										<td class="grey"><span id="getColor"></span></span></td>
+									</tr>
+
+									<tr id="checkTexture">
+										<td nowrap>
+											<h3>Текстура:</h3>
+										</td>
+										<td class="grey"><span id="getTexture"></span></span></td>
+									</tr>
+
+									<tr>
+										<td nowrap>
+											<h3>Длина:</h3>
+										</td>
+										<td class="grey"><span id="getWidth"></span><span>мм</span></span></td>
+									</tr>
+
+									<tr>
+										<td nowrap>
+											<h3>Высота:</h3>
+										</td>
+										<td class="grey"><span id="getHeight"></span><span>мм</span></td>
+									</tr>
+
+									<tr>
+										<td nowrap>
+											<h3>Площадь участка:</h3>
+										</td>
+										<td class="grey"><span id="getSquare"></span></td>
+									</tr>
+
+									<tr>
+										<td nowrap>
+											<h3>Количество:</h3>
+										</td>
+										<td class="grey"><span id="getAmount"></span></td>
+									</tr>
+								</tbody>
+							</table>
+
+
+							<button id="openForm">Заказать</button>
+						</div>
+
+
+					</div>
+					<div class="wrapTotalConfig">
+						<div class="totalConfig" id="totalConfig">
+							
+							<div id="square1">
+								<img class="blah" src="" width="300px" alt="">
+								<svg id="square" width="100%" height="300px" fill="gray" stroke-width="2"
+									stroke="rgb(0,0,0)"">	
+								<rect id=" wwww" width="100%" height="100%" />
+								</svg>
+							</div>
+
+							<div id="triangle1">
+								<img class="blah" src="" width="300px" alt="">
+								<svg id="triangle" width="100%" height="100%" fill="gray" stroke-width="1"
+									stroke="rgb(0,0,0)" viewBox="0 0 100 100">
+
+									<polygon points="0,100 50,0 100,100" />
+								</svg>
+							</div>
+
+
+							<div class="hexagonWrap">
+								<img class="blah" src="" width="300px" alt="">
+								<svg id="hexagon" width="110%" height="110%" viewBox="0 0 300 252" fill="gray"
+									stroke-width="1" stroke="rgb(0,0,0)">
+									<path
+										d="M75.173,251.959L0,126.152l74.827-126l150-0.193L300,125.766l-74.827,126L75.173,251.959z" />
+								</svg>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<div class="send">
+					<div id="content">
+						<h1> Заказать плитку </h1>
+						<form method="POST" id="formSend"></form>
+						<p> <label for="username" class="iconic user"> Имя </label>
+							<input type="text" name="username" id="username" required="required"
+								placeholder="Как можно к вам обратиться ?" /> </p>
+
+						<p> <label for="usermail" class="iconic mail-alt"> E-mail </span></label>
+							<input type="email" name="usermail" id="usermail"
+								placeholder="Обещаем, что не отправим спам" required="required" /> </p>
+
+						<p> <label for="userphone" class="iconic link"> Номер телефона </label> <input type="tel"
+								name="userphone" id="userphone" placeholder="Так же без звонков не по делу"/>							</p>
+
+						<p class="indication"> Все поля обязательны для заполнения</p>
+
+						<input type="button" id="send" value="Заказать!" />
+
+						<div class="close-popup js-close-campaign"></div>
+						</form>
+
+						<div id="resultOrder"></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
